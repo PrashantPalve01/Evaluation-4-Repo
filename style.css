@@ -106,7 +106,7 @@ header nav{
     
 }
 .GamePlay_cards>div{
-    background-color: red;
+    /* background-color: red; */
 }
 .GamePlay_cards > div:first-child{
     width: 100%;
@@ -166,22 +166,22 @@ header nav{
     width: 70%;
 }
 
-.blog_section
+.blog_section , .review_section ,.our_partners
 {
     width: 80%;
     margin: auto;
     margin-top: 100px;
 }
 
-.blog_section > h2{
-    width: 30%;
+.blog_section > h2 , .review_section > h2,.our_partners > h2{
+    width: 35%;
     text-align: center;
     margin: auto;
     font-family: Satoshi;
     font-size: 2rem;
     font-weight: bold;
 }
-.blog_section > h4{
+.blog_section > h4 , .review_section > h4{
     width: 40%;
     margin: auto;
     text-align: center;
@@ -189,21 +189,64 @@ header nav{
     font-size: 1.1rem;
 }
 
-.blog_cards{
+.blog_cards, .review_cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:4% 2%;
 }
-.blog_cards > div{
-    border-radius: 50px;
-}
 .blog_cards .card_footer{
     background: linear-gradient(92.98deg, rgba(217, 217, 217, 0.07) 32.09%, rgba(217, 217, 217, 0.05) 116.98%);
+    /* border-radius: 20px; */
+}
+.blog_cards .card_header{
+    overflow: hidden;
 }
 .blog_cards .card_footer > h2{
     font-family: Satoshi;
 }
 .blog_cards .card_footer > p{
     color: #8D96B2;
-    ;
+}
+
+
+.review_cards .card_header{
+    background: #020617;
+
+}
+.review_cards .card_footer{
+    background: linear-gradient(92.98deg, rgba(217, 217, 217, 0.07) 32.09%, rgba(217, 217, 217, 0.05) 116.98%);
+}
+.review_cards .card_footer .rounded-full{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+
+}
+.review_cards .card_footer p{
+    color: #8D96B2;
+    font-size: 0.5rem;
+}
+
+.img_section{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}
+.img_section img{
+    width: 80%;
+}
+
+
+.our_logo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:4% 2%;
+}
+.our_logo > div{
+    border: 0.75px solid;
+    background: linear-gradient(122.35deg, rgba(255, 255, 255, 0.21) 19.78%, rgba(255, 255, 255, 0) 187.39%);
+}
+.our_logo > div img {
+    height: 100px;
+    width: 100px;
 }
